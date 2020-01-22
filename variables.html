@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Variables</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+</head>
+
+<body>
+
+    <button>押してください</button>
+
+</body>
+
+<script>
+    const button = document.querySelector('button');
+
+    button.onclick = function() {
+        let name = prompt('あなたの名前は何ですか？');
+        alert('こんにちは、' + name + 'さん、初めまして！');
+    }
+
+    let myName;
+    let myAge;
+
+    // myName = 'Chris';
+    // myAge = 37;
+
+    // let myDog = 'Rover';
+
+    myName = 'Chris';
+
+    function logName() {
+        console.log(myName);
+    }
+
+    logName();
+
+    // var myName;
+
+    myName = 'Bob';
+    myAge = 40;
+
+    let test = 6 < 3; //folse;
+
+</script>
+</html>
