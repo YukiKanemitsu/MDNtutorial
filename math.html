@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Variables</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+</head>
+
+<body>
+
+  <button>起動する</button>
+  <p>マシンは停止中です。</p>
+
+</body>
+
+<script>
+  // var myInt = 5;
+  // var myFloat = 6.667;
+  // myInt;
+  // myFloat;
+
+  // typeof myInt;
+  // typeof myFloat;  
+
+  // var num1 = 10;
+  // var num2 = 50;
+  // 9 * num1;
+  // num2 / num1;
+
+
+  // 5 + 10 * 3;
+  // num2 % 9 * num1;
+  // // num2 + num1 / 8 + 2;
+  // (num2 + num1) / (8 + 2);
+
+  // var num1 = 4;
+  // num1++;
+
+  // var num2 = 6;
+  // num2--;
+  // num2;
+
+
+
+  // let x = 50; let y = 50;
+
+  // // Edit the two lines below here ONLY
+  // x = 50;
+  // y = 50;
+
+  // ctx.fillStyle = 'green';
+  // ctx.fillRect(10, 10, x, y);
+    
+  var btn = document.querySelector('button');
+  var txt = document.querySelector('p');
+
+  btn.addEventListener('click', updateBtn);
+
+  function updateBtn() {
+    if (btn.textContent === '起動する') {
+      btn.textContent = '停止する';
+      txt.textContent = 'マシンが起動しました！';
+    } else {
+      btn.textContent = '起動する';
+      txt.textContent = 'マシンは停止中です。';
+    }
+  }
+
+</script>
+</html>
