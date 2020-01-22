@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Strings</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+</head>
+
+<body>
+
+    <button>押してみて！</button>
+
+</body>
+
+<script>
+    var string = '革命はテレビでは放送されない。';
+    string;
+
+    var badString = string;
+    badString;
+
+    var sgl = 'シングルクォーテーション';
+    var dbl = "ダブルクォーテーション";
+    sgl;
+    dbl;
+
+    var sglDbl = 'Would you eat a "fish supper"?';
+    var dblSgl = "I'm feeling blue.";
+    sglDbl;
+    dblSgl;
+
+    var bigmouth = 'I\'ve got no right to take my place...';
+    bigmouth;
+
+
+    var one = 'こんにちは、';
+    var two = 'ご機嫌いかがでしょう？';
+    var joined = one + two;
+    joined;
+
+    var multiple = one + one + one + one + two;
+    multiple;
+
+
+    var response = one + '私は元気です。' + two;
+    response;
+
+    var button = document.querySelector('button');
+
+    button.onclick = function() {
+        var name = prompt('あなたの名前は？');
+        alert('こんにちは、' + name + 'さん。初めまして！');
+    }
+
+    var myDate = '19' + '67';
+    typeof myDate;
+
+    var myString = '123';
+    var myNum = Number(myString);
+    typeof myNum;
+
+    var myNum = 123;
+    var myString = myNum.toString();
+    typeof myString;
+
+</script>
+</html>
